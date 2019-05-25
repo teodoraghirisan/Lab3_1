@@ -22,24 +22,24 @@ namespace Lab2.Models
                 {
                     Title = "Movie1",
                     Description = "Description1",
-                    Genre = "action",
+                    Genre = Genre.action,
                     DurationInMinutes = 120,
                     YearOfRelease = 2017,
                     Director = "Director1",
                     Rating = 10,
-                    Watched="Yes"
+                    Watched=Watched.yes
                                                               
                 },
                 new Movie
                 {
                     Title = "Movie2",
                     Description = "Description2",
-                    Genre = "comedy",
+                    Genre = Genre.comedy,
                     DurationInMinutes = 110,
                     YearOfRelease = 2018,
                     Director = "Director2",
                     Rating = 9,
-                    Watched = "No"
+                    Watched = Watched.no
                 }
             );
             context.SaveChanges();
